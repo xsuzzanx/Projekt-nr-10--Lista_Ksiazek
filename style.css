@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* różowy kolor tła */
+    color: #333; /* kolor tekstu */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #c2185b; /* różowy kolor nagłówków */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #c2185b; /* różowy kolor przycisków */
+    color: #fff; /* biały kolor tekstu */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ad1457; /* ciemniejszy odcień różowego koloru przy najechaniu myszką */
+}
+
+a {
+    text-decoration: none;
+    color: #c2185b; /* różowy kolor linków */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li[data-read="true"] {
+    text-decoration: line-through;
+}
