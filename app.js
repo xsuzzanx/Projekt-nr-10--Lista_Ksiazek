@@ -1,11 +1,10 @@
 
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const bookRoutes = require('./routes/bookRoutes');
 //const open = require('open');
 
-const apps = express();
+const app = express();
 
 
 process.env.NODE_ENV = 'production';
@@ -34,8 +33,6 @@ app.get('/bookList', (req, res) => {
 app.get('/addBook', (req, res) => {
     res.redirect('/books/new');
 });
-
-
 
 app.use((req, res, next) => {
     res.status(404).send("Sorry, the page you are looking for doesn't exist.");
